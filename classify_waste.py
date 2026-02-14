@@ -40,7 +40,7 @@ def classify_waste_secure(image_path):
 
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash", 
+            model="gemini-flash-latest",
             contents=[image, prompt_text]
         )
         print("\n" + "-"*30)
